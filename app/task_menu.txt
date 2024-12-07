@@ -4,4 +4,12 @@
   task_menu_interface.c (task_menu_interface.h)
    Non-Blocking Code
 
+task_motor_dta_t contiene información sobre los motores, como potencia, velocidad y dirección.
+
+Se definen estados como ST_MAIN_XX, ST_MOTOR_XX, ST_POWER_XX
+
+Utiliza funciones como displayCharPositionWrite y displayStringWrite para mostrar información y opciones al usuario
+
+task_menu_init inicializa las estructuras y configuraciones necesarias
+
 ...
