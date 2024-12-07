@@ -1,4 +1,13 @@
   task_sensor.c (task_sensor.h, task_sensor_attribute.h) 
    Non-Blocking & Update By Time Code -> Sensor Modeling
-  
+
+task_sensor_init inicializa contadores y estructuras de datos asociadas a cada botón y
+registra los estados y eventos iniciales.
+
+task_sensor_update se ejecuta regularmente para actualizar los estados de los botones y se 
+maneja la transición de estados con ST_BTN_XX_UP, ST_BTN_XX_DOWN, ST_BTN_XX_FALLING, ST_BTN_XX_RISING
+
+task_sensor_cfg_t tiene la configuración estática para cada botón, como puerto, pin, estado presionado, etc.
+
+task_sensor_dta_t tiene la estructura dinámica que almacena el estado actual
 ...
