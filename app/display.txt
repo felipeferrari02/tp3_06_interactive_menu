@@ -1,4 +1,10 @@
   display.c (display.h)
    Non-Blocking Code -> Display Code Library
 
+displayInit configura el modo de operación del display: 4 u 8 bits
+
+displayCharPositionWrite permite posicionar el cursor en una posición específica
+
+displayStringWrite escribe cadenas de texto en la pantalla
+
 ...
