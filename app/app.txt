@@ -2,4 +2,11 @@
    Endless loops, which execute tasks with fixed computing time. This 
    sequential execution is only deviated from when an interrupt event occurs.
 
+task_cfg_t define la configuración de cada tarea
+task_dta_t almacena información sobre las tareas
+task_cfg_list contiene las tareas definidas en el sistema
+
+app_init configura las tareas e inicializa el contador de ciclos para medir tiempos de ejecución
+
+app_update ejecuta las tareas, mide su tiempo de ejecución, y actualiza el contador de aplicaciones
 ...
